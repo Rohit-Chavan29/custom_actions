@@ -1,0 +1,10 @@
+name: Example use of custom action
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      name: my-action
+      uses: ./.github/actions/hello-world/action.yml
+      with:
+        name: Rohit
