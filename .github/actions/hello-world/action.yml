@@ -1,14 +1,14 @@
-name: Sample action
-author: Rohit
-description: A sample hello world action
+name: "Hello world action"
+description: "Greeting"
 inputs:
   name:
-    description: Name of the person
+    description: "Name of the user"
     required: true
-    default: Rohit
 runs:
   using: composite
   steps:
-    - name: Greetings
+    - name: "Print hello user"
       run: echo "Hello ${{ inputs.name }}"
       shell: bash
+
+
