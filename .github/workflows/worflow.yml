@@ -1,7 +1,7 @@
 name: Example use of custom action
 on: push
 jobs:
-  test:
+  Hello-world:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
